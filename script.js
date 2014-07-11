@@ -1,7 +1,5 @@
 function handleWindowResize()
 {
-	var w = $(window).width();
-	console.log(w);
 	
 }
 
