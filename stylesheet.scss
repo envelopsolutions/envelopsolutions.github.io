@@ -18,17 +18,17 @@ header
 	background: $green;
 	position: fixed;
 	top: 0;
-	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) , (max-width: 900px)
 	{
 		height: 200px;
+		text-align: center;
+		position: relative;
 	}
-
 
 	.logocontainer 
 	{
-		@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
 		{
-			margin-left: 35%;
 			display: block;
 		}
 		padding-top: 15px;
@@ -37,8 +37,7 @@ header
 		> a
 		{
 			text-decoration: none;
-
-
+			
 			.logo
 			{
 				margin-top: 0;
@@ -47,7 +46,12 @@ header
 				padding: 0 50px;			
 				color: white;
 				display: inline-block;
-				
+				@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
+				{
+					font-size: 68px;
+					margin-bottom: 0;
+					margin-left: -8%;
+				}
 			}
 
 			.logoeffect-left
@@ -75,7 +79,7 @@ header
 					margin-right: -50px;
 					margin-left: 40px;
 					opacity: 1;
-					@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+					@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
 					{
 						//dont change anything (hide animation)
 						@include mLogoEffect_pre;
@@ -90,7 +94,7 @@ header
 					transition: $logoAnimationTime 0 ease;
 					margin-left: -50px;
 					opacity: 1;
-					@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+					@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
 					{
 						//dont change anything (hide animation)
 						@include mLogoEffect_pre;				
@@ -102,7 +106,6 @@ header
 			}
 		}
 
-
 	}
 
 	.navcontainer
@@ -113,10 +116,13 @@ header
 		float: right;
 		margin-right: 100px;
 		margin-top: 35px;
-		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
 		{
 			margin-right: 0;
+			margin-left: 0;
+			width: 100%;
 		}
+
 		> a
 		{
 			display: inline-block;
@@ -125,7 +131,7 @@ header
 			color: white;
 			border-bottom: 3px solid $green;
 			transition: 0.2s 0 ease;
-			@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+			@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
 			{
 				display: block;
 				padding: 30px 0;
@@ -133,6 +139,14 @@ header
 				float: left;
 				text-align: center;
 				width: 100%;
+				margin-left: 0;
+				transition: 0.2s 0 linear;
+
+				&:hover
+				{
+					background-color: darken($green, 15%);
+					transition: 0.2s 0 linear;
+				}
 			}
 
 			&:hover
@@ -150,4 +164,21 @@ header
 
 	}
 
+}
+
+
+
+
+
+
+
+
+
+
+
+//temp stuff
+.spacetaker
+{
+	height: 2000px;
+	width: 100%;
 }
