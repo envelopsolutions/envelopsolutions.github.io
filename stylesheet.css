@@ -4,15 +4,16 @@ header {
   background: #4ede96;
   position: fixed;
   top: 0; }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
     header {
-      height: 200px; } }
+      height: 200px;
+      text-align: center;
+      position: relative; } }
   header .logocontainer {
     padding-top: 15px;
     display: inline-block; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
       header .logocontainer {
-        margin-left: 35%;
         display: block; } }
     header .logocontainer > a {
       text-decoration: none; }
@@ -23,6 +24,11 @@ header {
         padding: 0 50px;
         color: white;
         display: inline-block; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
+          header .logocontainer > a .logo {
+            font-size: 68px;
+            margin-bottom: 0;
+            margin-left: -8%; } }
       header .logocontainer > a .logoeffect-left {
         color: white;
         font-size: 48px;
@@ -47,7 +53,7 @@ header {
         margin-right: -50px;
         margin-left: 40px;
         opacity: 1; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
           header .logocontainer > a:hover .logoeffect-left {
             color: white;
             font-size: 48px;
@@ -62,7 +68,7 @@ header {
         transition: 0.2s 0 ease;
         margin-left: -50px;
         opacity: 1; }
-        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
           header .logocontainer > a:hover .logoeffect-right {
             color: white;
             font-size: 48px;
@@ -79,9 +85,11 @@ header {
     float: right;
     margin-right: 100px;
     margin-top: 35px; }
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
       header .navcontainer {
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%; } }
     header .navcontainer > a {
       display: inline-block;
       margin-left: 50px;
@@ -89,16 +97,25 @@ header {
       color: white;
       border-bottom: 3px solid #4ede96;
       transition: 0.2s 0 ease; }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
         header .navcontainer > a {
           display: block;
           padding: 30px 0;
           background-color: #1fa763;
           float: left;
           text-align: center;
-          width: 100%; } }
+          width: 100%;
+          margin-left: 0;
+          transition: 0.2s 0 linear; }
+          header .navcontainer > a:hover {
+            background-color: #23bc70;
+            transition: 0.2s 0 linear; } }
       header .navcontainer > a:hover {
         transition: 0.2s 0 ease;
         border-bottom: 3px solid white; }
       header .navcontainer > a h2 {
         margin: 0; }
+
+.spacetaker {
+  height: 2000px;
+  width: 100%; }
