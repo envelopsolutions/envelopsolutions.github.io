@@ -1,0 +1,153 @@
+$green: #4EDE96;
+$logoAnimationTime: 0.2s;
+
+@mixin mLogoEffect_pre
+{
+	color: white;
+	font-size: 48px;				
+	display: inline-block;
+	transition: $logoAnimationTime 0 ease;
+	opacity: 0;
+}
+
+
+header
+{
+	height: 100px;
+	width: 100%;
+	background: $green;
+	position: fixed;
+	top: 0;
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+	{
+		height: 200px;
+	}
+
+
+	.logocontainer 
+	{
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+		{
+			margin-left: 35%;
+			display: block;
+		}
+		padding-top: 15px;
+		display: inline-block;
+
+		> a
+		{
+			text-decoration: none;
+
+
+			.logo
+			{
+				margin-top: 0;
+				font-family: 'Merriweather', serif;
+				font-size: 48px;
+				padding: 0 50px;			
+				color: white;
+				display: inline-block;
+				
+			}
+
+			.logoeffect-left
+			{
+				@include mLogoEffect_pre;
+				margin-left: 70px;
+				margin-right: -80px;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			.logoeffect-right
+			{
+				@include mLogoEffect_pre;				
+				margin-left: -80px;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			&:hover
+			{
+				.logoeffect-left
+				{
+					transition: $logoAnimationTime 0 ease;
+					margin-right: -50px;
+					margin-left: 40px;
+					opacity: 1;
+					@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+					{
+						//dont change anything (hide animation)
+						@include mLogoEffect_pre;
+						margin-left: 70px;
+						margin-right: -80px;
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+				}
+				.logoeffect-right
+				{
+					transition: $logoAnimationTime 0 ease;
+					margin-left: -50px;
+					opacity: 1;
+					@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+					{
+						//dont change anything (hide animation)
+						@include mLogoEffect_pre;				
+						margin-left: -80px;
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+
+	}
+
+	.navcontainer
+	{
+		height: 100px;
+		display: inline-block;
+		font-family: 'Merriweather', serif;
+		float: right;
+		margin-right: 100px;
+		margin-top: 35px;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+		{
+			margin-right: 0;
+		}
+		> a
+		{
+			display: inline-block;
+			margin-left: 50px;
+			text-decoration: none;
+			color: white;
+			border-bottom: 3px solid $green;
+			transition: 0.2s 0 ease;
+			@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+			{
+				display: block;
+				padding: 30px 0;
+				background-color: darken($green, 20%);
+				float: left;
+				text-align: center;
+				width: 100%;
+			}
+
+			&:hover
+			{
+				transition: 0.2s 0 ease;
+				border-bottom: 3px solid white;
+			}
+
+			h2
+			{
+				margin: 0;
+			}
+		}
+
+
+	}
+
+}
