@@ -121,13 +121,39 @@ header
 	{
 		height: 100px;
 	}
+
+	.computer-pic
+	{
+		background-color: $green;
+		width: 100%;
+
+		> img
+		{
+			max-width: 100%;
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //handheld changes
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) , (max-width: 900px)
 {
 	header
 	{
+		position: relative;
 		height: 400px;
 		text-align: center;
 
@@ -183,7 +209,7 @@ header
 	{
 		.navspace
 		{
-			height: 480px;
+			height: 0;
 		}
 	}
 }
