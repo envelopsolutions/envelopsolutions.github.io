@@ -26,7 +26,9 @@ header
 	width: 100%;
 	background: $green;
 	position: fixed;
+	opacity: 0.9;
 	top: 0;
+	box-shadow: 0 4px 12px #333333;
 
 	h1
 	{
@@ -124,12 +126,12 @@ header
 
 	.computer-pic
 	{
-		background-color: $green;
 		width: 100%;
 
 		> img
 		{
 			max-width: 100%;
+			border-bottom: 2px solid $green;
 		}
 	}
 }

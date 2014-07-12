@@ -2,7 +2,9 @@ header {
   width: 100%;
   background: #4ede96;
   position: fixed;
-  top: 0; }
+  opacity: 0.9;
+  top: 0;
+  box-shadow: 0 4px 12px #333333; }
   header h1 {
     margin-top: 5px; }
   header .logocontainer {
@@ -76,10 +78,10 @@ header {
 .wrapper .navspace {
   height: 100px; }
 .wrapper .computer-pic {
-  background-color: #4ede96;
   width: 100%; }
   .wrapper .computer-pic > img {
-    max-width: 100%; }
+    max-width: 100%;
+    border-bottom: 2px solid #4ede96; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
   header {
