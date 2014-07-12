@@ -4,104 +4,78 @@ $logoAnimationTime: 0.2s;
 @mixin mLogoEffect_pre
 {
 	color: white;
-	font-size: 48px;				
+	font-size: 48px;
 	display: inline-block;
 	transition: $logoAnimationTime 0 ease;
 	opacity: 0;
 }
 
+@mixin mLogoEffect_post
+{
+	transition: $logoAnimationTime 0 ease;
+	opacity: 1;
+	@media only screen and (max-width : 480px), (max-width: 900px)
+	{
+		@include mLogoEffect_pre;
+	}
+}
+
 
 header
 {
-	height: 100px;
 	width: 100%;
 	background: $green;
 	position: fixed;
 	top: 0;
-	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) , (max-width: 900px)
+
+	h1
 	{
-		height: 200px;
-		text-align: center;
-		position: relative;
+		margin-top: 5px;
 	}
 
-	.logocontainer 
+	.logocontainer
 	{
-		@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
-		{
-			display: block;
-		}
 		padding-top: 15px;
 		display: inline-block;
+		float: left;
 
 		> a
 		{
 			text-decoration: none;
-			
+
 			.logo
 			{
 				margin-top: 0;
 				font-family: 'Merriweather', serif;
 				font-size: 48px;
-				padding: 0 50px;			
+				padding: 0 50px;
 				color: white;
 				display: inline-block;
-				@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
-				{
-					font-size: 68px;
-					margin-bottom: 0;
-					margin-left: -8%;
-				}
 			}
 
 			.logoeffect-left
 			{
 				@include mLogoEffect_pre;
-				margin-left: 70px;
-				margin-right: -80px;
-				margin-top: 0;
-				margin-bottom: 0;
+				margin: 0 -80px 0 70px;
 			}
 
 			.logoeffect-right
 			{
-				@include mLogoEffect_pre;				
-				margin-left: -80px;
-				margin-top: 0;
-				margin-bottom: 0;
+				@include mLogoEffect_pre;
+				margin: 0 auto 0 -80px;
 			}
 
 			&:hover
 			{
 				.logoeffect-left
 				{
-					transition: $logoAnimationTime 0 ease;
-					margin-right: -50px;
-					margin-left: 40px;
-					opacity: 1;
-					@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
-					{
-						//dont change anything (hide animation)
-						@include mLogoEffect_pre;
-						margin-left: 70px;
-						margin-right: -80px;
-						margin-top: 0;
-						margin-bottom: 0;
-					}
+					@include mLogoEffect_post;
+					margin: 0 -50px 0 40px;
 				}
 				.logoeffect-right
 				{
-					transition: $logoAnimationTime 0 ease;
+					@include mLogoEffect_post;
 					margin-left: -50px;
-					opacity: 1;
-					@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
-					{
-						//dont change anything (hide animation)
-						@include mLogoEffect_pre;				
-						margin-left: -80px;
-						margin-top: 0;
-						margin-bottom: 0;
-					}
 				}
 			}
 		}
@@ -110,19 +84,12 @@ header
 
 	.navcontainer
 	{
-		height: 100px;
 		display: inline-block;
 		font-family: 'Merriweather', serif;
 		float: right;
+		clear: none;
 		margin-right: 100px;
 		margin-top: 35px;
-		@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
-		{
-			margin-right: 0;
-			margin-left: 0;
-			width: 100%;
-		}
-
 		> a
 		{
 			display: inline-block;
@@ -130,28 +97,10 @@ header
 			text-decoration: none;
 			color: white;
 			border-bottom: 3px solid $green;
-			transition: 0.2s 0 ease;
-			@media only screen and (min-device-width : 320px) and (max-device-width : 480px), (max-width: 900px)
-			{
-				display: block;
-				padding: 30px 0;
-				background-color: darken($green, 20%);
-				float: left;
-				text-align: center;
-				width: 100%;
-				margin-left: 0;
-				transition: 0.2s 0 linear;
-
-				&:hover
-				{
-					background-color: darken($green, 15%);
-					transition: 0.2s 0 linear;
-				}
-			}
+			position: relative;
 
 			&:hover
 			{
-				transition: 0.2s 0 ease;
 				border-bottom: 3px solid white;
 			}
 
@@ -166,12 +115,78 @@ header
 
 }
 
+.wrapper
+{
+	.navspace
+	{
+		height: 100px;
+	}
+}
 
+//handheld changes
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) , (max-width: 900px)
+{
+	header
+	{
+		height: 400px;
+		text-align: center;
 
+		.logocontainer
+		{
+			display: block;
+			text-align: center;
+			width: 100%;
+			>a
+			{
+				.logo
+				{
+					font-size: 100px;
+					margin-right: 5%;
+				}
 
+				&:hover
+				{
+					.logoeffect-left
+					{
+						margin: 0 -80px 0 70px;
+					}
+					.logoeffect-right
+					{
+						margin: 0 auto 0 -80px;
+					}
+				}
+			}
+		}
 
+		.navcontainer
+		{
+			margin: 0;
+			width: 100%;
+			> a
+			{
+				padding: 50px 0;
+				background-color: darken($green, 20%);
+				text-align: center;
+				width: 100%;
+				margin-left: 0;
+				font-size: 30px;
 
+				&:hover
+				{
+					background-color: darken($green, 15%);
+				}
+			}
+		}
+	}
 
+	.wrapper
+	{
+		.navspace
+		{
+			height: 480px;
+		}
+	}
+}
 
 
 

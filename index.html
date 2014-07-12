@@ -3,7 +3,7 @@
 
 <head>
 	<title>Envelop - high quality and affordable web design and development</title>
-        
+
         <!--  Grab jQuery libraries from Google -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
@@ -24,10 +24,12 @@
 <body>
 	<header>
 		<div class="logocontainer">
-			<a href="#">				
-				<h1 class="logoeffect-left">(</h1>
-				<h1 class="logo">envelop</h1>
-				<h1 class="logoeffect-right">)</h1>
+			<a href="#">
+				<h1>
+					<span class="logoeffect-left">(</span>
+					<span class="logo">envelop</span>
+					<span class="logoeffect-right">)</span>
+				</h1>
 			</a>
 		</div>
 
@@ -40,8 +42,11 @@
 	</header>
 
 	<div class="wrapper">
-		<div class="spacetaker">
-		</div>
+		<!-- empty block that sits underneath header pushing all other elements down -->
+		<div class="navspace"></div>
+
+		<!-- Remove this in the end -->
+		<div class="spacetaker"></div>
 	</div>
 
 	<footer></footer>
