@@ -16,6 +16,13 @@
         }
     }
 
+    .gray-bknd
+    {
+        background-color: #eeeeee;
+        width: 100%;
+        padding: 15px 0 15px 0;
+    }
+
     .text-wrapper
     {
         text-align: center;
@@ -34,20 +41,20 @@
         {
             font-size: 42px;
             font-family: 'Merriweather', serif;
-            color: $green;
+            color: #666666;
             margin: 60px 0 20px 0;
 
         }
 
         p
         {
-            font-family: 'Merriweather', serif;
+            font-family: sans-serif;
             font-size: 28px;
         }
 
         a
         {
-            color: $green;
+            color: $accent;
             font-size: 28px;
         }
 
@@ -56,11 +63,12 @@
             padding: 20px;
             img
             {
-
                 float:left;
                 width: 20%;
                 max-width: 200px;
-                border: 3px solid $green;
+                border: 7px solid $accent;
+                margin-right: 75px;
+                border-radius: 5px;
 
             }
 
@@ -143,20 +151,6 @@
     {
         margin-top: 120px;
         margin-bottom: 200px;
-    }
-
-    .hovertext
-    {
-        color: #aaaaaa;
-        font-size: 24px;
-        visibility: visible;
-    }
-
-    .taptext
-    {
-        color: #aaaaaa;
-        font-size: 24px;
-        visibility: hidden;
     }
 
 }

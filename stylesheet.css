@@ -3,8 +3,8 @@ header {
   background: #4ede96;
   position: fixed;
   top: 0;
-  box-shadow: 0 4px 12px #555555;
-  z-index: 999; }
+  z-index: 999;
+  border-bottom: 1px solid #999999; }
   header h1 {
     margin-top: 5px; }
   header .logocontainer {
@@ -83,6 +83,10 @@ header {
   .wrapper .computer-pic > img {
     max-width: 100%;
     border-bottom: 2px solid #4ede96; }
+.wrapper .gray-bknd {
+  background-color: #eeeeee;
+  width: 100%;
+  padding: 15px 0 15px 0; }
 .wrapper .text-wrapper {
   text-align: center;
   width: 80%;
@@ -95,13 +99,13 @@ header {
   .wrapper .text-wrapper h3 {
     font-size: 42px;
     font-family: 'Merriweather', serif;
-    color: #4ede96;
+    color: #666666;
     margin: 60px 0 20px 0; }
   .wrapper .text-wrapper p {
-    font-family: 'Merriweather', serif;
+    font-family: sans-serif;
     font-size: 28px; }
   .wrapper .text-wrapper a {
-    color: #4ede96;
+    color: #666666;
     font-size: 28px; }
   .wrapper .text-wrapper .employee-info {
     padding: 20px; }
@@ -109,7 +113,9 @@ header {
       float: left;
       width: 20%;
       max-width: 200px;
-      border: 3px solid #4ede96; }
+      border: 7px solid #666666;
+      margin-right: 75px;
+      border-radius: 5px; }
     .wrapper .text-wrapper .employee-info > p {
       margin: 20px;
       color: #555555;
@@ -159,16 +165,9 @@ header {
 .wrapper .contact-section {
   margin-top: 120px;
   margin-bottom: 200px; }
-.wrapper .hovertext {
-  color: #aaaaaa;
-  font-size: 24px;
-  visibility: visible; }
-.wrapper .taptext {
-  color: #aaaaaa;
-  font-size: 24px;
-  visibility: hidden; }
 
 footer {
+  margin-top: -25px;
   height: 50px;
   width: 100%;
   background-color: #4ede96;
