@@ -12,6 +12,9 @@
 		<link rel='stylesheet' type='text/css' href='normalize.css'/>
 		<script type='text/javascript' src='script.js'></script>
 
+		<!-- icon -->
+		<link rel="shortcut icon" href="icon.ico">
+
         <!-- meta -->
         <meta name="description" content="Located in Akron, OH, Envelop is a company devoted to delivering top quality web development and design solutions for affordable prices.">
         <meta http-equiv="content-type" content="text/html;charset=UTF-8">
@@ -25,7 +28,7 @@
 <body>
 	<header>
 		<div class="logocontainer">
-			<a href="#">
+			<a href="index.html">
 				<h1>
 					<span class="logoeffect-left">(</span>
 					<span class="logo">envelop</span>
@@ -35,8 +38,10 @@
 		</div>
 
 		<div class="navcontainer">
-			<a href=""><h2>about us</h2></a>
-			<a href=""><h2>contact</h2></a>
+			<a id="about"><h2>about us</h2></a>
+			<a id="team"><h2>our team</h2></a>
+			<a id="process"><h2>process</h2></a>
+			<a id="contact"><h2>contact</h2></a>
 
 		</div>
 
@@ -47,7 +52,7 @@
 		<div class="navspace"></div>
 		<div class="computer-pic"><img src="computer.jpg"/></div>
 		<div class="text-wrapper">
-			<h1>Envelop Solutions</h1>
+			<h1 class="aboutScroll">Envelop Solutions</h1>
 			<p>We are a talented young company that is dedicated to providing the ultimate
 				experience in web design and development.  As a small company, we focus on
 				client interaction and providing the highest quality experience from inception
@@ -56,7 +61,7 @@
 
 		<div class="green-bknd">
 			<div class="text-wrapper">
-				<h1>Meet our team.</h1>
+				<h1 class="teamScroll">Meet our team.</h1>
 
 				<h3>Jake Demian: Head of Development</h3>
 				<div class="employee-info">
@@ -82,7 +87,7 @@
 			</div>
 		</div>
 
-		<div class="text-wrapper">
+		<div class="text-wrapper processScroll">
 			<h1>Our simple development process.</h1>
 		</div>
 
@@ -106,8 +111,17 @@
             </div>
         </div>
 
+		<div class="contact-section contactScroll">
+			<div class="text-wrapper">
+				<h1>Contact Us</h1>
+				<p>If you are interested in working with us, please email us at</p>
+				<a href="mailto:jakedemiandev@gmail.com">jakedemiandev [at] gmail.com</a>
+			</div>
+		</div>
 
-
+		<footer>
+			<p class="copyright-section">Copyright&copy; 2014 Envelop Solutions</p>
+		</footer>
 
 
 
