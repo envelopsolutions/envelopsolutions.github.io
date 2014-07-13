@@ -110,7 +110,7 @@ header {
     .wrapper .text-wrapper .employee-info > p {
       margin: 20px; }
 .wrapper .green-bknd {
-  background-color: #63e2a3;
+  background-color: #79e6b0;
   width: 100%; }
   .wrapper .green-bknd .text-wrapper {
     text-align: center;
@@ -132,7 +132,7 @@ header {
       font-family: 'Merriweather', serif;
       font-size: 28px; }
     .wrapper .green-bknd .text-wrapper .employee-info {
-      border: 5px solid #63e2a3; }
+      border: 5px solid #79e6b0; }
       .wrapper .green-bknd .text-wrapper .employee-info img {
         margin: 20px;
         float: left;
@@ -181,7 +181,6 @@ header {
       visibility: hidden;
       text-align: center;
       width: 100%;
-      margin: 0 2% 10% 2%;
       color: #4ede96;
       font-size: 32px; }
 

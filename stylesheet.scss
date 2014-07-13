@@ -184,7 +184,7 @@ header
 
 	.green-bknd
 	{
-		background-color: lighten($green, 5%);
+		background-color: lighten($green, 10%);
 		width: 100%;
 		.text-wrapper
 		{
@@ -218,7 +218,7 @@ header
 
 			.employee-info
 			{
-				border: 5px solid lighten($green, 5%);
+				border: 5px solid lighten($green, 10%);
 
 				img
 				{
@@ -298,28 +298,14 @@ header
 				visibility:hidden;
 				text-align:center;
 				width:100%;
-				margin: 0 2% 10% 2%;
 				color: $green;
 				font-size: 32px;
 
 			}
-
 		}
 	}
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -391,8 +377,6 @@ header
 
 		.text-wrapper
 		{
-
-
 			.employee-info
 			{
 				img
@@ -403,34 +387,29 @@ header
 			}
 		}
 
-
 		.process-steps
 		{
 			width: 80%;
 
 			.process-column
 			{
-
 				display: block;
 				width: 100%;
 				margin: 25px 0 25px 0;
 				h2
 				{
 					font-size: 64px;
-					
+
 					margin-bottom: 0;
 				}
-
 
 				.bottomText{
 
 					font-size: 40px;
 
 				}
-
 			}
 		}
-
 
 	}
 }
