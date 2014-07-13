@@ -1,0 +1,21 @@
+$green: #4EDE96;
+$logoAnimationTime: 0.2s;
+
+@mixin mLogoEffect_pre
+{
+    color: white;
+    font-size: 48px;
+    display: inline-block;
+    transition: $logoAnimationTime 0 ease;
+    opacity: 0;
+}
+
+@mixin mLogoEffect_post
+{
+    transition: $logoAnimationTime 0 ease;
+    opacity: 1;
+    @media only screen and (max-width : 480px), (max-width: 900px)
+    {
+        @include mLogoEffect_pre;
+    }
+}

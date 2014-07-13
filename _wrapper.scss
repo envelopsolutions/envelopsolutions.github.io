@@ -1,0 +1,215 @@
+.wrapper
+{
+    .navspace
+    {
+        height: 100px;
+    }
+
+    .computer-pic
+    {
+        width: 100%;
+
+        > img
+        {
+            max-width: 100%;
+            border-bottom: 2px solid $green;
+        }
+    }
+
+    .text-wrapper
+    {
+        text-align: center;
+        width: 80%;
+        margin: 30px auto 100px auto;
+
+        h1
+        {
+            font-size: 64px;
+            font-family: 'Merriweather', serif;
+            color: $green;
+            margin: 0;
+        }
+
+        h3
+        {
+            font-size: 42px;
+            font-family: 'Merriweather', serif;
+            color: darken($green, 15%);
+            margin: 60px 0 20px 0;
+        }
+
+        p
+        {
+            font-family: 'Merriweather', serif;
+            font-size: 28px;
+        }
+
+        a
+        {
+            color: $green;
+            font-size: 28px;
+        }
+
+        .employee-info
+        {
+            border: 5px solid $green;
+            img
+            {
+                margin: 20px;
+                float:left;
+                width: 20%;
+                max-width: 200px;
+                border: 3px solid $green;
+            }
+
+            > p
+            {
+                margin: 20px;
+            }
+        }
+    }
+
+    .green-bknd
+    {
+        background-color: lighten($green, 10%);
+        width: 100%;
+        .text-wrapper
+        {
+            text-align: center;
+            width: 80%;
+            margin: 30px auto 100px auto;
+            padding-bottom: 100px;
+
+            h1
+            {
+                font-size: 64px;
+                font-family: 'Merriweather', serif;
+                color: white;
+                margin: 0;
+                padding-top: 100px;
+            }
+
+            h3
+            {
+                font-size: 42px;
+                font-family: 'Merriweather', serif;
+                color: white;
+                margin: 60px 0 20px 0;
+            }
+
+            p
+            {
+                font-family: 'Merriweather', serif;
+                font-size: 28px;
+            }
+
+            .employee-info
+            {
+                border: 5px solid lighten($green, 10%);
+
+                img
+                {
+                    margin: 20px;
+                    float:left;
+                    width: 20%;
+                    max-width: 200px;
+                    border: 7px solid white;
+                }
+
+                > p
+                {
+                    margin: 20px;
+                    color: #444444;
+                }
+            }
+        }
+    }
+
+
+
+    .process-steps
+    {
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        background-color: white;
+        height: 500px;
+        font-family: 'Merriweather', serif;
+
+        .process-column
+        {
+            width: 28%;
+            margin: 0 0%;
+            min-height: 300px;
+            background-color: $green;
+            display: inline-block;
+            text-align: center;
+            border: 3px solid white;
+            transition: 0.5s 0 ease;
+            top: 0;
+            position:relative;
+
+            h2
+            {
+                color: white;
+                font-size: 42px;
+            }
+
+            .icon
+            {
+                color: white;
+                font-size: 64px;
+            }
+
+            &:hover
+            {
+                border: 3px solid $green;
+                background-color: white;
+                transition: 0.5s 0 ease;
+                padding-bottom: 250px;
+
+                h2, .icon
+                {
+                    color: $green;
+                }
+
+                .bottomText
+                {
+                    visibility:visible;
+                }
+            }
+
+            .bottomText{
+                position:absolute;
+                bottom:15px;
+                visibility:hidden;
+                text-align:center;
+                width:100%;
+                color: $green;
+                font-size: 32px;
+
+            }
+        }
+    }
+
+    .contact-section
+    {
+        margin-top: 120px;
+        margin-bottom: 200px;
+    }
+
+    .hovertext
+    {
+        color: #aaaaaa;
+        font-size: 24px;
+        visibility: visible;
+    }
+
+    .taptext
+    {
+        color: #aaaaaa;
+        font-size: 24px;
+        visibility: hidden;
+    }
+
+}

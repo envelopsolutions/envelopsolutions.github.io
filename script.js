@@ -11,7 +11,7 @@ function goToByScroll(id)
 	else
 	{
 		$('html,body').stop().animate({
-			scrollTop: $("."+id).offset().top-80},
+			scrollTop: $("."+id).offset().top-30},
 			'slow');
 	}
 }

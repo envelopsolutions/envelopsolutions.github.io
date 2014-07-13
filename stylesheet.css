@@ -190,6 +190,14 @@ header {
 .wrapper .contact-section {
   margin-top: 120px;
   margin-bottom: 200px; }
+.wrapper .hovertext {
+  color: #aaaaaa;
+  font-size: 24px;
+  visibility: visible; }
+.wrapper .taptext {
+  color: #aaaaaa;
+  font-size: 24px;
+  visibility: hidden; }
 
 footer {
   height: 50px;
@@ -248,4 +256,8 @@ footer {
       .wrapper .process-steps .process-column .bottomText {
         font-size: 40px; }
   .wrapper .contact-section {
-    margin-top: 720px; } }
+    margin-top: 720px; }
+  .wrapper .hovertext {
+    visibility: hidden; }
+  .wrapper .taptext {
+    visibility: visible; } }

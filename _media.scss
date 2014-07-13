@@ -1,0 +1,116 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) , (max-width: 900px)
+{
+    header
+    {
+        position: relative;
+        height: 400px;
+        text-align: center;
+
+        .logocontainer
+        {
+            display: block;
+            text-align: center;
+            width: 100%;
+            >a
+            {
+                .logo
+                {
+                    font-size: 100px;
+                    margin-right: 5%;
+                }
+
+                &:hover
+                {
+                    .logoeffect-left
+                    {
+                        margin: 0 -80px 0 70px;
+                    }
+                    .logoeffect-right
+                    {
+                        margin: 0 auto 0 -80px;
+                    }
+                }
+            }
+        }
+
+        .navcontainer
+        {
+            margin: 0;
+            width: 100%;
+            > a
+            {
+                padding: 50px 0;
+                background-color: darken($green, 20%);
+                text-align: center;
+                width: 100%;
+                margin-left: 0;
+                font-size: 30px;
+
+                &:hover
+                {
+                    background-color: darken($green, 15%);
+                }
+            }
+        }
+    }
+
+    .wrapper
+    {
+        .navspace
+        {
+            height: 0;
+        }
+
+        .text-wrapper
+        {
+            .employee-info
+            {
+                img
+                {
+                    float: left;
+                    width: 40%;
+                }
+            }
+        }
+
+        .process-steps
+        {
+            width: 80%;
+
+            .process-column
+            {
+                display: block;
+                width: 100%;
+                margin: 25px 0 25px 0;
+                h2
+                {
+                    font-size: 64px;
+
+                    margin-bottom: 0;
+                }
+
+                .bottomText{
+
+                    font-size: 40px;
+
+                }
+            }
+        }
+
+        .contact-section
+        {
+            margin-top: 720px;
+        }
+
+        .hovertext
+        {
+            visibility: hidden;
+        }
+
+        .taptext
+        {
+            visibility: visible;
+        }
+
+    }
+}

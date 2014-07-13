@@ -1,0 +1,96 @@
+header
+{
+    width: 100%;
+    background: $green;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 12px #555555;
+    z-index: 999;
+
+    h1
+    {
+        margin-top: 5px;
+    }
+
+    .logocontainer
+    {
+        padding-top: 15px;
+        display: inline-block;
+        float: left;
+
+        > a
+        {
+            text-decoration: none;
+
+            .logo
+            {
+                margin-top: 0;
+                font-family: 'Merriweather', serif;
+                font-size: 48px;
+                padding: 0 50px;
+                color: white;
+                display: inline-block;
+            }
+
+            .logoeffect-left
+            {
+                @include mLogoEffect_pre;
+                margin: 0 -80px 0 70px;
+            }
+
+            .logoeffect-right
+            {
+                @include mLogoEffect_pre;
+                margin: 0 auto 0 -80px;
+            }
+
+            &:hover
+            {
+                .logoeffect-left
+                {
+                    @include mLogoEffect_post;
+                    margin: 0 -50px 0 40px;
+                }
+                .logoeffect-right
+                {
+                    @include mLogoEffect_post;
+                    margin-left: -50px;
+                }
+            }
+        }
+
+    }
+
+    .navcontainer
+    {
+        display: inline-block;
+        font-family: 'Merriweather', serif;
+        float: right;
+        clear: none;
+        margin-right: 25px;
+        margin-top: 35px;
+        > a
+        {
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            border-bottom: 3px solid $green;
+            position: relative;
+
+            &:hover
+            {
+                border-bottom: 3px solid white;
+            }
+
+            h2
+            {
+                margin: 0;
+            }
+        }
+
+
+    }
+
+}
