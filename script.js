@@ -2,18 +2,9 @@ function goToByScroll(id)
 {
     id = id.replace("link", "");
 
-	if(id != "teamScroll")
-	{
-	    $('html,body').stop().animate({
-	        scrollTop: $("."+id).offset().top-130},
-	        'slow');
-	}
-	else
-	{
-		$('html,body').stop().animate({
-			scrollTop: $("."+id).offset().top-30},
-			'slow');
-	}
+    $('html,body').stop().animate({
+        scrollTop: $("."+id).offset().top-130},
+        'slow');
 }
 
 $(document).ready(function()
