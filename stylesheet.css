@@ -95,15 +95,18 @@ header {
     font-size: 64px;
     font-family: 'Merriweather', serif;
     color: #4ede96;
-    margin: 0; }
+    margin: 75px auto 40px auto; }
   .wrapper .text-wrapper h3 {
     font-size: 42px;
     font-family: 'Merriweather', serif;
     color: #666666;
     margin: 60px 0 20px 0; }
   .wrapper .text-wrapper p {
-    font-family: sans-serif;
-    font-size: 28px; }
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    font-weight: lighter;
+    color: #444444; }
   .wrapper .text-wrapper a {
     color: #666666;
     font-size: 28px; }
@@ -113,7 +116,7 @@ header {
       float: left;
       width: 20%;
       max-width: 200px;
-      border: 7px solid #666666;
+      border: 7px solid #79e6b0;
       margin-right: 75px;
       border-radius: 5px; }
     .wrapper .text-wrapper .employee-info > p {
@@ -125,7 +128,7 @@ header {
   width: 90%;
   text-align: center;
   background-color: white;
-  height: 500px;
+  height: 400px;
   font-family: 'Merriweather', serif; }
   .wrapper .process-steps .process-column {
     width: 28%;
@@ -141,7 +144,8 @@ header {
     border-radius: 10px; }
     .wrapper .process-steps .process-column h2 {
       color: white;
-      font-size: 42px; }
+      font-size: 42px;
+      cursor: default; }
     .wrapper .process-steps .process-column .icon {
       color: white;
       font-size: 64px; }
@@ -161,10 +165,10 @@ header {
       text-align: center;
       width: 100%;
       color: #4ede96;
-      font-size: 32px; }
-.wrapper .contact-section {
-  margin-top: 120px;
-  margin-bottom: 200px; }
+      font-size: 32px;
+      cursor: default; }
+.wrapper .contact-section p {
+  text-align: center; }
 
 footer {
   margin-top: -25px;

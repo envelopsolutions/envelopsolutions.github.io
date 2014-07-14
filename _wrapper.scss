@@ -34,7 +34,7 @@
             font-size: 64px;
             font-family: 'Merriweather', serif;
             color: $green;
-            margin: 0;
+            margin: 75px auto 40px auto;
         }
 
         h3
@@ -48,8 +48,11 @@
 
         p
         {
-            font-family: sans-serif;
-            font-size: 28px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 24px;
+            text-align: justify;
+            font-weight: lighter;
+            color: #444444;
         }
 
         a
@@ -66,7 +69,7 @@
                 float:left;
                 width: 20%;
                 max-width: 200px;
-                border: 7px solid $accent;
+                border: 7px solid lighten($green, 10%);
                 margin-right: 75px;
                 border-radius: 5px;
 
@@ -87,7 +90,7 @@
         width: 90%;
         text-align: center;
         background-color: white;
-        height: 500px;
+        height: 400px;
         font-family: 'Merriweather', serif;
 
         .process-column
@@ -101,13 +104,13 @@
             border: 3px solid white;
             transition: 0.5s 0 ease;
             top: 0;
-            position:relative;
             border-radius: 10px;
 
             h2
             {
                 color: white;
                 font-size: 42px;
+                cursor: default;
             }
 
             .icon
@@ -121,7 +124,7 @@
                 border: 3px solid $green;
                 background-color: white;
                 transition: 0.5s 0 ease;
-                padding-bottom: 250px;
+                margin-bottom: 250px;
 
                 h2, .icon
                 {
@@ -131,6 +134,11 @@
                 .bottomText
                 {
                     visibility:visible;
+                }
+
+                .process-steps
+                {
+                    margin-bottom: 500px;
                 }
             }
 
@@ -142,15 +150,17 @@
                 width:100%;
                 color: $green;
                 font-size: 32px;
-
+                cursor: default;
             }
         }
     }
 
     .contact-section
     {
-        margin-top: 120px;
-        margin-bottom: 200px;
+        p
+        {
+            text-align: center;
+        }
     }
 
 }
