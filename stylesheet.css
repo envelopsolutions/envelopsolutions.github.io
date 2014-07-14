@@ -104,7 +104,7 @@ header {
   .wrapper .text-wrapper p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
-    text-align: justify;
+    text-align: left;
     font-weight: lighter;
     color: #444444; }
   .wrapper .text-wrapper a {
@@ -153,7 +153,7 @@ header {
       border: 3px solid #4ede96;
       background-color: white;
       transition: 0.5s 0 ease;
-      padding-bottom: 250px; }
+      padding-bottom: 150px; }
       .wrapper .process-steps .process-column:hover h2, .wrapper .process-steps .process-column:hover .icon {
         color: #4ede96; }
       .wrapper .process-steps .process-column:hover .bottomText {
@@ -165,10 +165,12 @@ header {
       text-align: center;
       width: 100%;
       color: #4ede96;
-      font-size: 32px;
-      cursor: default; }
-.wrapper .contact-section p {
-  text-align: center; }
+      font-size: 32px; }
+.wrapper .contact-section {
+  margin-top: 120px;
+  margin-bottom: 200px; }
+  .wrapper .contact-section p {
+    text-align: center; }
 
 footer {
   margin-top: -25px;
