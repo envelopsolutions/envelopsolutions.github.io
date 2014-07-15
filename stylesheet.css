@@ -5,7 +5,8 @@ header {
   top: 0;
   z-index: 999;
   border-bottom: 1px solid #4ede96;
-  max-height: 101px; }
+  max-height: 101px;
+  opacity: 0.95; }
   header h1 {
     margin-top: 5px;
     display: inline-block; }
