@@ -28,4 +28,17 @@ $(document).ready(function()
     });
 
 
+    setInterval(function()
+    {
+        $('iframe').height("450px");
+
+    }, 1000);
+
+    //allow tapping to take place of hovering on mobile devices for the process section
+    $('.process-column').click(function()
+    {
+        $('.process-column').trigger('mouseover');
+    });
+
+
 });

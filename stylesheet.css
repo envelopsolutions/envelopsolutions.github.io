@@ -36,23 +36,23 @@ header {
         transition: 0.2s 0 ease;
         opacity: 0;
         margin: 0 auto 0 -80px; }
-      header .logocontainer > a:hover .logoeffect-left {
+      header .logocontainer > a:hover .logoeffect-left, header .logocontainer > a:focus .logoeffect-left {
         transition: 0.2s 0 ease;
         opacity: 1;
         margin: 0 -50px 0 40px; }
         @media only screen and (max-width: 480px), (max-width: 900px) {
-          header .logocontainer > a:hover .logoeffect-left {
+          header .logocontainer > a:hover .logoeffect-left, header .logocontainer > a:focus .logoeffect-left {
             color: white;
             font-size: 48px;
             display: inline-block;
             transition: 0.2s 0 ease;
             opacity: 0; } }
-      header .logocontainer > a:hover .logoeffect-right {
+      header .logocontainer > a:hover .logoeffect-right, header .logocontainer > a:focus .logoeffect-right {
         transition: 0.2s 0 ease;
         opacity: 1;
         margin-left: -50px; }
         @media only screen and (max-width: 480px), (max-width: 900px) {
-          header .logocontainer > a:hover .logoeffect-right {
+          header .logocontainer > a:hover .logoeffect-right, header .logocontainer > a:focus .logoeffect-right {
             color: white;
             font-size: 48px;
             display: inline-block;
@@ -79,9 +79,11 @@ header {
         margin: 0; }
 
 .wrapper .navspace {
-  height: 100px; }
+  height: 100px;
+  background-color: #32ad70; }
 .wrapper .computer-pic {
-  width: 100%; }
+  width: 100%;
+  background-color: #32ad70; }
   .wrapper .computer-pic > img {
     max-width: 100%;
     border-bottom: 2px solid #32ad70; }
@@ -152,14 +154,14 @@ header {
     .wrapper .process-steps .process-column .icon {
       color: white;
       font-size: 64px; }
-    .wrapper .process-steps .process-column:hover {
+    .wrapper .process-steps .process-column:hover, .wrapper .process-steps .process-column:focus {
       border: 3px solid #32ad70;
       background-color: white;
       transition: 0.5s 0 ease;
       padding-bottom: 150px; }
-      .wrapper .process-steps .process-column:hover h2, .wrapper .process-steps .process-column:hover .icon {
+      .wrapper .process-steps .process-column:hover h2, .wrapper .process-steps .process-column:hover .icon, .wrapper .process-steps .process-column:focus h2, .wrapper .process-steps .process-column:focus .icon {
         color: #32ad70; }
-      .wrapper .process-steps .process-column:hover .bottomText {
+      .wrapper .process-steps .process-column:hover .bottomText, .wrapper .process-steps .process-column:focus .bottomText {
         visibility: visible; }
     .wrapper .process-steps .process-column .bottomText {
       position: absolute;
@@ -214,9 +216,9 @@ footer {
       header .logocontainer > a .logo {
         font-size: 100px;
         margin-right: 5%; }
-      header .logocontainer > a:hover .logoeffect-left {
+      header .logocontainer > a:focus .logoeffect-left {
         margin: 0 -80px 0 70px; }
-      header .logocontainer > a:hover .logoeffect-right {
+      header .logocontainer > a:focus .logoeffect-right {
         margin: 0 auto 0 -80px; }
     header .navcontainer {
       margin: 0;
@@ -225,39 +227,42 @@ footer {
         padding: 50px 0;
         background-color: #1b5e3d;
         text-align: center;
-        width: 100%;
+        width: 49%;
         margin-left: 0;
-        font-size: 30px; }
-        header .navcontainer > a:hover {
+        font-size: 30px;
+        display: inline-block; }
+        header .navcontainer > a:focus {
           background-color: #21724a; }
 
-  .wrapper .navspace {
-    height: 0; }
-  .wrapper .text-wrapper .employee-info {
-    text-align: center; }
-    .wrapper .text-wrapper .employee-info img {
-      width: 40%;
-      display: block;
-      margin: auto;
-      float: center; }
-    .wrapper .text-wrapper .employee-info p {
-      display: block;
-      clear: both;
-      float: center;
-      margin: 20px 10% 40px 10%; }
-  .wrapper .process-steps {
-    width: 80%;
-    height: 1100px; }
-    .wrapper .process-steps .process-column {
-      display: block;
-      width: 100%;
-      margin: 25px 0 25px 0; }
-      .wrapper .process-steps .process-column h2 {
-        font-size: 64px;
-        margin-bottom: 0; }
-      .wrapper .process-steps .process-column .bottomText {
-        font-size: 30px; }
-  .wrapper .hovertext {
-    visibility: hidden; }
-  .wrapper .taptext {
-    visibility: visible; } }
+  .wrapper {
+    clear: both; }
+    .wrapper .navspace {
+      height: 0; }
+    .wrapper .text-wrapper .employee-info {
+      text-align: center; }
+      .wrapper .text-wrapper .employee-info img {
+        width: 40%;
+        display: block;
+        margin: auto;
+        float: center; }
+      .wrapper .text-wrapper .employee-info p {
+        display: block;
+        clear: both;
+        float: center;
+        margin: 20px 10% 40px 10%; }
+    .wrapper .process-steps {
+      width: 80%;
+      height: 1100px; }
+      .wrapper .process-steps .process-column {
+        display: block;
+        width: 100%;
+        margin: 25px 0 25px 0; }
+        .wrapper .process-steps .process-column h2 {
+          font-size: 64px;
+          margin-bottom: 0; }
+        .wrapper .process-steps .process-column .bottomText {
+          font-size: 30px; }
+    .wrapper .hovertext {
+      visibility: hidden; }
+    .wrapper .taptext {
+      visibility: visible; } }

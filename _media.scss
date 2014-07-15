@@ -20,7 +20,7 @@
                     margin-right: 5%;
                 }
 
-                &:hover
+                &:focus
                 {
                     .logoeffect-left
                     {
@@ -43,11 +43,12 @@
                 padding: 50px 0;
                 background-color: darken($green, 20%);
                 text-align: center;
-                width: 100%;
+                width: 49%;
                 margin-left: 0;
                 font-size: 30px;
+                display: inline-block;
 
-                &:hover
+                &:focus
                 {
                     background-color: darken($green, 15%);
                 }
@@ -57,6 +58,7 @@
 
     .wrapper
     {
+        clear: both;
         .navspace
         {
             height: 0;
