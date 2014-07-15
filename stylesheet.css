@@ -1,14 +1,16 @@
 header {
   width: 100%;
-  background: #4ede96;
+  background: #32ad70;
   position: fixed;
   top: 0;
   z-index: 999;
-  border-bottom: 1px solid #999999; }
+  border-bottom: 1px solid #4ede96;
+  max-height: 101px; }
   header h1 {
-    margin-top: 5px; }
+    margin-top: 5px;
+    display: inline-block; }
   header .logocontainer {
-    padding-top: 15px;
+    margin-top: 15px;
     display: inline-block;
     float: left; }
     header .logocontainer > a {
@@ -69,7 +71,7 @@ header {
       margin-left: 20px;
       text-decoration: none;
       color: white;
-      border-bottom: 3px solid #4ede96;
+      border-bottom: 3px solid #32ad70;
       position: relative; }
       header .navcontainer > a:hover {
         border-bottom: 3px solid white; }
@@ -82,11 +84,11 @@ header {
   width: 100%; }
   .wrapper .computer-pic > img {
     max-width: 100%;
-    border-bottom: 2px solid #4ede96; }
+    border-bottom: 2px solid #32ad70; }
 .wrapper .gray-bknd {
-  background-color: #eeeeee;
+  background-color: #dddddd;
   width: 100%;
-  padding: 15px 0 15px 0; }
+  padding: 10px 0; }
 .wrapper .text-wrapper {
   text-align: center;
   width: 80%;
@@ -94,7 +96,7 @@ header {
   .wrapper .text-wrapper h1 {
     font-size: 64px;
     font-family: 'Merriweather', serif;
-    color: #4ede96;
+    color: #32ad70;
     margin: 75px auto 40px auto; }
   .wrapper .text-wrapper h3 {
     font-size: 42px;
@@ -108,21 +110,22 @@ header {
     font-weight: lighter;
     color: #444444; }
   .wrapper .text-wrapper a {
-    color: #666666;
+    color: #4ede96;
     font-size: 28px; }
   .wrapper .text-wrapper .employee-info {
     padding: 20px; }
     .wrapper .text-wrapper .employee-info img {
       float: left;
-      width: 20%;
-      max-width: 200px;
-      border: 7px solid #79e6b0;
+      width: 30%;
+      max-width: 250px;
+      border: 7px solid #48ca8a;
       margin-right: 75px;
-      border-radius: 5px; }
+      margin-left: 75px;
+      border-radius: 100%; }
     .wrapper .text-wrapper .employee-info > p {
-      margin: 20px;
+      margin: 20px 20px 20px 30%;
       color: #555555;
-      font-size: 26px; }
+      font-size: 22px; }
 .wrapper .process-steps {
   margin: auto;
   width: 90%;
@@ -134,7 +137,7 @@ header {
     width: 28%;
     margin: 0 0%;
     min-height: 300px;
-    background-color: #4ede96;
+    background-color: #32ad70;
     display: inline-block;
     text-align: center;
     border: 3px solid white;
@@ -150,12 +153,12 @@ header {
       color: white;
       font-size: 64px; }
     .wrapper .process-steps .process-column:hover {
-      border: 3px solid #4ede96;
+      border: 3px solid #32ad70;
       background-color: white;
       transition: 0.5s 0 ease;
       padding-bottom: 150px; }
       .wrapper .process-steps .process-column:hover h2, .wrapper .process-steps .process-column:hover .icon {
-        color: #4ede96; }
+        color: #32ad70; }
       .wrapper .process-steps .process-column:hover .bottomText {
         visibility: visible; }
     .wrapper .process-steps .process-column .bottomText {
@@ -163,29 +166,44 @@ header {
       bottom: 15px;
       visibility: hidden;
       text-align: center;
-      width: 100%;
-      color: #4ede96;
-      font-size: 32px; }
+      width: 90%;
+      color: #32ad70;
+      font-size: 26px;
+      margin-left: 5%;
+      margin-bottom: 12%;
+      font-family: 'Source Sans Pro', sans-serif; }
 .wrapper .contact-section {
-  margin-top: 120px;
-  margin-bottom: 200px; }
+  margin-bottom: 50px;
+  text-align: center; }
+  .wrapper .contact-section h1 {
+    font-size: 64px;
+    font-family: 'Merriweather', serif;
+    color: #32ad70; }
   .wrapper .contact-section p {
-    text-align: center; }
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px; }
+  .wrapper .contact-section a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    color: #27d27d; }
+  .wrapper .contact-section #foxyform_embed_link_573974 {
+    visibility: hidden; }
 
 footer {
   margin-top: -25px;
   height: 50px;
   width: 100%;
-  background-color: #4ede96;
+  background-color: #32ad70;
   text-align: center;
   font-family: 'Merriweather', serif;
-  font-size: 24px; }
+  font-size: 12px; }
   footer p {
     color: white;
     padding-top: 10px; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
   header {
+    max-height: none;
     position: relative;
     height: 400px;
     text-align: center; }
@@ -205,21 +223,31 @@ footer {
       width: 100%; }
       header .navcontainer > a {
         padding: 50px 0;
-        background-color: #1fa763;
+        background-color: #1b5e3d;
         text-align: center;
         width: 100%;
         margin-left: 0;
         font-size: 30px; }
         header .navcontainer > a:hover {
-          background-color: #23bc70; }
+          background-color: #21724a; }
 
   .wrapper .navspace {
     height: 0; }
-  .wrapper .text-wrapper .employee-info img {
-    float: left;
-    width: 40%; }
+  .wrapper .text-wrapper .employee-info {
+    text-align: center; }
+    .wrapper .text-wrapper .employee-info img {
+      width: 40%;
+      display: block;
+      margin: auto;
+      float: center; }
+    .wrapper .text-wrapper .employee-info p {
+      display: block;
+      clear: both;
+      float: center;
+      margin: 20px 10% 40px 10%; }
   .wrapper .process-steps {
-    width: 80%; }
+    width: 80%;
+    height: 1100px; }
     .wrapper .process-steps .process-column {
       display: block;
       width: 100%;
@@ -228,9 +256,7 @@ footer {
         font-size: 64px;
         margin-bottom: 0; }
       .wrapper .process-steps .process-column .bottomText {
-        font-size: 40px; }
-  .wrapper .contact-section {
-    margin-top: 720px; }
+        font-size: 30px; }
   .wrapper .hovertext {
     visibility: hidden; }
   .wrapper .taptext {

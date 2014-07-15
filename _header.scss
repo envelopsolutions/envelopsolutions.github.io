@@ -5,16 +5,18 @@ header
     position: fixed;
     top: 0;
     z-index: 999;
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid $accent;
+    max-height: 101px;
 
     h1
     {
         margin-top: 5px;
+        display: inline-block;
     }
 
     .logocontainer
     {
-        padding-top: 15px;
+        margin-top: 15px;
         display: inline-block;
         float: left;
 
