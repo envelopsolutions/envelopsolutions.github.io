@@ -72,9 +72,13 @@ header {
       text-decoration: none;
       color: white;
       border-bottom: 3px solid #32ad70;
-      position: relative; }
+      position: relative;
+      padding-bottom: 30px;
+      transition: 0.2s 0 ease; }
       header .navcontainer > a:hover {
-        border-bottom: 3px solid white; }
+        border-bottom: 3px solid white;
+        padding-bottom: 0;
+        transition: 0.2s 0 ease; }
       header .navcontainer > a h2 {
         margin: 0; }
 
@@ -139,7 +143,7 @@ header {
     width: 28%;
     margin: 0 0%;
     min-height: 300px;
-    background-color: #32ad70;
+    background-color: #38c17d;
     display: inline-block;
     text-align: center;
     border: 3px solid white;
@@ -155,7 +159,7 @@ header {
       color: white;
       font-size: 64px; }
     .wrapper .process-steps .process-column:hover, .wrapper .process-steps .process-column:focus {
-      border: 3px solid #32ad70;
+      border: 3px solid #38c17d;
       background-color: white;
       transition: 0.5s 0 ease;
       padding-bottom: 150px; }
@@ -231,6 +235,9 @@ footer {
         margin-left: 0;
         font-size: 30px;
         display: inline-block; }
+        header .navcontainer > a:hover {
+          padding-bottom: 50px;
+          border-bottom: 3px solid #32ad70; }
         header .navcontainer > a:focus {
           background-color: #21724a; }
 

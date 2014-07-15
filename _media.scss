@@ -48,6 +48,12 @@
                 font-size: 30px;
                 display: inline-block;
 
+                &:hover
+                {
+                    padding-bottom: 50px;
+                    border-bottom: 3px solid $green;
+                }
+
                 &:focus
                 {
                     background-color: darken($green, 15%);
@@ -65,7 +71,7 @@
         }
 
         .text-wrapper
-        { 
+        {
             p
             {
                 font-size: 28px;

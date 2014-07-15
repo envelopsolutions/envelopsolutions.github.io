@@ -30,7 +30,7 @@
         text-align: center;
         width: 80%;
         margin: 30px auto 100px auto;
- 
+
         h1
         {
             font-size: 64px;
@@ -101,7 +101,7 @@
             width: 28%;
             margin: 0 0%;
             min-height: 300px;
-            background-color: $green;
+            background-color: lighten($green, 5%);
             display: inline-block;
             text-align: center;
             border: 3px solid white;
@@ -125,7 +125,7 @@
 
             &:hover, &:focus
             {
-                border: 3px solid $green;
+                border: 3px solid lighten($green, 5%);
                 background-color: white;
                 transition: 0.5s 0 ease;
                 padding-bottom: 150px;

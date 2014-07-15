@@ -80,10 +80,14 @@ header
             color: white;
             border-bottom: 3px solid $green;
             position: relative;
+            padding-bottom: 30px;
+            transition: 0.2s 0 ease;
 
             &:hover
             {
                 border-bottom: 3px solid white;
+                padding-bottom: 0;
+                transition: 0.2s 0 ease;
             }
 
             h2
