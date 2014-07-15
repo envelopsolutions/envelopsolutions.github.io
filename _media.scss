@@ -65,7 +65,12 @@
         }
 
         .text-wrapper
-        {
+        { 
+            p
+            {
+                font-size: 28px;
+                margin: auto 10%;
+            }
             .employee-info
             {
                 text-align: center;
@@ -82,7 +87,8 @@
                     display: block;
                     clear: both;
                     float: center;
-                    margin: 20px 10% 40px 10%;
+                    margin: 20px 6% 40px 10%;
+                    font-size: 26px;
                 }
             }
         }

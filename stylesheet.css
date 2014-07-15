@@ -238,6 +238,9 @@ footer {
     clear: both; }
     .wrapper .navspace {
       height: 0; }
+    .wrapper .text-wrapper p {
+      font-size: 28px;
+      margin: auto 10%; }
     .wrapper .text-wrapper .employee-info {
       text-align: center; }
       .wrapper .text-wrapper .employee-info img {
@@ -249,7 +252,8 @@ footer {
         display: block;
         clear: both;
         float: center;
-        margin: 20px 10% 40px 10%; }
+        margin: 20px 6% 40px 10%;
+        font-size: 26px; }
     .wrapper .process-steps {
       width: 80%;
       height: 1100px; }
