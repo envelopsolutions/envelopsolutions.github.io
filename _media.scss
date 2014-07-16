@@ -37,16 +37,21 @@
         .navcontainer
         {
             margin: 0;
-            width: 100%;
+            padding: 0;
+            width: 101%;
             > a
             {
                 padding: 50px 0;
                 background-color: darken($green, 20%);
                 text-align: center;
-                width: 49%;
+                width: 50%;
                 margin-left: 0;
                 font-size: 30px;
                 display: inline-block;
+                margin-right: -5px;
+                margin-bottom: -4px;
+                border: 1px solid $green;
+
 
                 &:hover
                 {

@@ -231,15 +231,19 @@ footer {
         margin: 0 auto 0 -80px; }
     header .navcontainer {
       margin: 0;
-      width: 100%; }
+      padding: 0;
+      width: 101%; }
       header .navcontainer > a {
         padding: 50px 0;
         background-color: #1b5e3d;
         text-align: center;
-        width: 49%;
+        width: 50%;
         margin-left: 0;
         font-size: 30px;
-        display: inline-block; }
+        display: inline-block;
+        margin-right: -5px;
+        margin-bottom: -4px;
+        border: 1px solid #32ad70; }
         header .navcontainer > a:hover {
           padding-bottom: 50px;
           border-bottom: 3px solid #32ad70; }
