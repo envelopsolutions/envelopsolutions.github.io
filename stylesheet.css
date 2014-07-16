@@ -96,6 +96,9 @@ header {
   background-color: #dddddd;
   width: 100%;
   padding: 10px 0; }
+.wrapper pre {
+  margin: 0;
+  padding: 0; }
 .wrapper .text-wrapper {
   text-align: center;
   width: 80%;
@@ -109,7 +112,7 @@ header {
     font-size: 42px;
     font-family: 'Merriweather', serif;
     color: #666666;
-    margin: 60px 0 20px 0; }
+    margin: 60px 0 20px 40px; }
   .wrapper .text-wrapper p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
@@ -120,7 +123,8 @@ header {
     color: #4ede96;
     font-size: 28px; }
   .wrapper .text-wrapper .employee-info {
-    padding: 20px; }
+    padding: 20px;
+    margin-bottom: 100px; }
     .wrapper .text-wrapper .employee-info img {
       float: left;
       width: 30%;
