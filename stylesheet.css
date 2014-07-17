@@ -132,7 +132,13 @@ header {
       border: 7px solid #48ca8a;
       margin-right: 75px;
       margin-left: 75px;
-      border-radius: 100%; }
+      border-radius: 100%;
+      transition: 0.4s 0 ease; }
+      .wrapper .text-wrapper .employee-info img:hover {
+        transition: 0.4s 0 ease;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
     .wrapper .text-wrapper .employee-info > p {
       margin: 20px 20px 20px 30%;
       color: #555555;
