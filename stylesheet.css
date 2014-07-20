@@ -190,7 +190,6 @@ header {
       margin-bottom: 12%;
       font-family: 'Source Sans Pro', sans-serif; }
 .wrapper .contact-section {
-  margin-bottom: 50px;
   text-align: center; }
   .wrapper .contact-section h1 {
     font-size: 64px;
@@ -203,20 +202,28 @@ header {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
     color: #27d27d; }
-  .wrapper .contact-section #foxyform_embed_link_573974 {
-    visibility: hidden; }
+  .wrapper .contact-section #wufoo-z1lq6zl51nne001 {
+    margin-left: 30%;
+    margin-right: 30%; }
 
 footer {
   margin-top: -25px;
-  height: 50px;
   width: 100%;
-  background-color: #32ad70;
+  background: #38c17d;
   text-align: center;
-  font-family: 'Merriweather', serif;
-  font-size: 12px; }
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  z-index: 999; }
   footer p {
     color: white;
-    padding-top: 10px; }
+    padding-top: 10px;
+    z-index: 999; }
+
+video {
+  width: 100%;
+  opacity: 0.2;
+  margin-top: -60px;
+  margin-bottom: -6px; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
   header {
@@ -291,4 +298,7 @@ footer {
     .wrapper .hovertext {
       visibility: hidden; }
     .wrapper .taptext {
-      visibility: visible; } }
+      visibility: visible; }
+
+  footer video {
+    visibility: hidden; } }
