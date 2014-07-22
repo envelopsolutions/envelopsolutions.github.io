@@ -53,6 +53,9 @@
         {
             max-width: 100%;
             border-bottom: 2px solid $green;
+            -webkit-user-select: none; /* Chrome/Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+ */
         }
     }
 
