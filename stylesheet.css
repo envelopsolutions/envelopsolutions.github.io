@@ -6,7 +6,7 @@ header {
   z-index: 999;
   border-bottom: 1px solid #4ede96;
   max-height: 101px;
-  opacity: 0.95; }
+  box-shadow: 0 3px 10px #333333; }
   header h1 {
     margin-top: 5px;
     display: inline-block; }
@@ -86,6 +86,25 @@ header {
 .wrapper .navspace {
   height: 100px;
   background-color: #32ad70; }
+.wrapper .slidingword {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 6%;
+  clear: both;
+  margin-left: -30%;
+  border-radius: 5px; }
+  .wrapper .slidingword p {
+    color: #eeeeee;
+    font-size: 80px;
+    padding: 5px;
+    margin: 5px;
+    float: right;
+    font-family: 'Merriweather', serif;
+    font-weight: bold; }
+.wrapper .slidingword2 {
+  margin-top: 16%; }
+.wrapper .slidingword3 {
+  margin-top: 26%; }
 .wrapper .computer-pic {
   width: 100%;
   background-color: #32ad70; }

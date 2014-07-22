@@ -1,3 +1,8 @@
+function manageNameSize()
+{
+    $('.slidingword p').css('font-size', ($(window).width() * 0.05) + 'px');
+}
+
 function goToByScroll(id)
 {
     id = id.replace("link", "");
@@ -9,6 +14,14 @@ function goToByScroll(id)
 
 $(document).ready(function()
 {
+
+    manageNameSize();
+    // if the user resizes the window, dynamically change the height and width
+    $(window).resize(function()
+    {
+        manageNameSize();
+    });
+
 	$('#about').click(function()
     {
         goToByScroll("aboutScroll");
@@ -40,6 +53,8 @@ $(document).ready(function()
         $('.process-column').trigger('mouseover');
     });
 
-    
+    $(".slidingword1").stop().animate({left: "95%"}, 1000);
+    $(".slidingword2").stop().animate({left: "95%"}, 1600);
+    $(".slidingword3").stop().animate({left: "95%"}, 2200);
 
 });

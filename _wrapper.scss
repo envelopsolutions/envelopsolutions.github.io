@@ -6,6 +6,36 @@
         background-color: $green;
     }
 
+    .slidingword
+    {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin-top: 6%;
+        clear: both;
+        margin-left: -30%;
+        border-radius: 5px;
+        p
+        {
+            color: #eeeeee;
+            font-size: 80px;
+            padding: 5px;
+            margin: 5px;
+            float: right;
+            font-family: 'Merriweather', serif;
+            font-weight: bold;
+        }
+
+    }
+    .slidingword2
+    {
+        margin-top: 16%;
+    }
+    .slidingword3
+    {
+        margin-top: 26%;
+    }
+
+
     .computer-pic
     {
         width: 100%;
