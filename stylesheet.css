@@ -99,7 +99,14 @@ header {
     margin: 5px;
     float: right;
     font-family: 'Merriweather', serif;
-    font-weight: bold; }
+    font-weight: bold;
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+ */
+    cursor: default; }
 .wrapper .slidingword1 {
   margin-left: -65%; }
 .wrapper .slidingword2 {
