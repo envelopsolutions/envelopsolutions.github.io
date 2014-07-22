@@ -53,8 +53,8 @@ $(document).ready(function()
         $('.process-column').trigger('mouseover');
     });
 
-    $(".slidingword1").stop().animate({left: "95%"}, 1000);
-    $(".slidingword2").stop().animate({left: "95%"}, 1600);
-    $(".slidingword3").stop().animate({left: "95%"}, 2200);
+    $(".slidingword1").stop().animate({left: "115%"}, 1000);
+    $(".slidingword2").stop().animate({left: "115%"}, 1600);
+    $(".slidingword3").stop().animate({left: "115%"}, 2200);
 
 });

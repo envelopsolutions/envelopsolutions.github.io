@@ -91,7 +91,6 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
   margin-top: 6%;
   clear: both;
-  margin-left: -30%;
   border-radius: 5px; }
   .wrapper .slidingword p {
     color: #eeeeee;
@@ -101,10 +100,14 @@ header {
     float: right;
     font-family: 'Merriweather', serif;
     font-weight: bold; }
+.wrapper .slidingword1 {
+  margin-left: -65%; }
 .wrapper .slidingword2 {
-  margin-top: 16%; }
+  margin-top: 16%;
+  margin-left: -60%; }
 .wrapper .slidingword3 {
-  margin-top: 26%; }
+  margin-top: 26%;
+  margin-left: -55%; }
 .wrapper .computer-pic {
   width: 100%;
   background-color: #32ad70; }
